@@ -1,0 +1,6 @@
+
+DROP DATABASE IF EXISTS kidZmart_db;
+
+CREATE DATABASE kidZmart_db;
+
+

@@ -1,0 +1,24 @@
+<section id="available-videos">
+    <ul id="videos-list">
+      {{#each video}}
+          <li class="available-videos">
+            <span class="videos">
+              {{this.id}}
+              {{this.link}}
+            </span>
+            <span id="play">
+              <form action="/{{this.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="play" value="true">
+                <button class="play-button" type="submit">Play!</button>
+              </form>
+            </span>
+          </li>
+      {{/each}}
+    </ul>
+  </section>
+
+
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY,fvZZ6syH1UQ,dXn2ylTiqLw,?controls=1">
+</iframe>
+

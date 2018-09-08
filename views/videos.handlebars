@@ -1,0 +1,41 @@
+<style>
+    .embed-responsive {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+
+
+<div class="container">
+    <div class="page-header">
+        <h3>Watch some fun videos here...</h3>
+    </div>
+    <div class="row">
+        {{#each videos}}
+
+            <div class="col-md-4">
+                <iframe
+                        src="https://www.youtube.com/embed/{{this.link}}?rel=0"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+
+
+        {{/each}}
+    </div>
+</div>
+
+
